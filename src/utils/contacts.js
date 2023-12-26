@@ -2,20 +2,21 @@ import localforage from "localforage";
 import { matchSorter } from "match-sorter";
 import sortBy from "sort-by";
 
-// const contacts = [
-//   {
-//     id: "1",
-//   {
-//     id: "2",
-//     first: "Michael",
-//     last: "Jackson",
-//     twitter: "@mjackson",
-//     avatar:
-//       "https://pbs.twimg.com/profile_images/1529950053317505024/D2kf-q6Q_400x400.jpg",
-//     favorite: false,
-//     notes: "heyooo"
-//   },
-// ];
+const contacts = [
+  {
+    id: "1",
+  },
+  {
+    id: "2",
+    first: "Michael",
+    last: "Jackson",
+    twitter: "@mjackson",
+    avatar:
+      "https://pbs.twimg.com/profile_images/1529950053317505024/D2kf-q6Q_400x400.jpg",
+    favorite: false,
+    notes: "heyooo"
+  },
+];
 
 export async function getContacts(query) {
   await fakeNetwork(`getContacts:${query}`);
